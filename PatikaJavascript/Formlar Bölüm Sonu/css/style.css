@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient( #50e5f0, #d3fdf4 );
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+ #testform{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ #testform label{
+    margin-top:1rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+ #testform input{
+    height: 2rem;
+    font-size: 1rem;
+    padding-left: 1rem;    
+}
+
+.submitdiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+#btnsubmit{
+    font-size: 1rem;
+    border-style: none;
+    background-color: rgb(97, 248, 59);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#btnreset{
+    font-size: 1rem;
+    border-style: none;
+    background-color: rgb(247, 49, 49);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.additemClass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;   
+}
+
+.additemClass:hover{
+    background-color: rgb(121, 194, 182);
+}
+
+.domLi{
+    list-style-type: none;
+    margin: 0.2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.formErr{
+    margin-top: 2rem;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: red;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    animation-name: formErrAni;
+    animation-duration: 4s;    
+}
+
+@keyframes formErrAni {
+    0%   {background-color: red}
+    20%  {background-color: yellow}
+    40%  {background-color: red}
+    60% {background-color: yellow}
+    80%  {background-color: red}
+    100% {background-color: yellow}
+  }
