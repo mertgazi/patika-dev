@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f8;
+  font-family: "Zilla Slab", serif;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #ff6a23;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.btn-item {
+  margin-left: 15px;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.btn-item:focus {
+  outline-color: #4d5055a8;
+  outline-style: solid;
+  outline-width: 0.3rem;
+  box-shadow: 5px 5px 8px;
+}
+
+.btn-item:hover {
+  color: #f1f5f8;
+  background-image: linear-gradient(145deg, rgb(128, 124, 124) 65%, white);
+}
+
+
+
+/* DOM eklenecekler */
+.photo {
+  width: 30%;
+  height: 175px;
+  object-fit: cover;
+  border: 0.25rem solid black;
+  border-radius: 10px;
+}
+
+.menu-items {
+  display: flex;
+  margin: 20px 0;
+}
+
+.menu-info {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+h4 {
+  color: #e00a00;
+}
+
+.menu-text {
+  padding-top: 20px;
+}
+
+
+/* Responsive  Tasarım*/ 
+#toggle-menu{
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .menu-items {
+    display: flex;
+    width: 90%;
+  }
+
+  #toggle-menu{
+    float: right;
+  }
+
+  #toggle-menu{
+    display: block;
+  }
+
+  .btn-container {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;  
+  };  
+ 
+}
+
+.toggleContainer{
+  max-height: 100% ;
+}
